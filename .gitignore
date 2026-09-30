@@ -1,0 +1,42 @@
+# ==============================================================================
+# BUENOS DÍAS — REGLAS DE SEGURIDAD Y PRIVACIDAD (GITIGNORE)
+# ==============================================================================
+
+# Entorno y Secretos (NUNCA SUBIR A GITHUB)
+.env
+.env.*
+!.env.example
+
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Credenciales y Tokens de Google OAuth
+credentials/*
+!credentials/.gitkeep
+
+# Sesiones de WhatsApp Web y Datos Locales
+data/*
+!data/.gitkeep
+.wwebjs_cache/
+.wwebjs_*
+*.session
+*.session-journal
+
+# Reportes diarios generados (contienen correos personales y pericias)
+reportes/*
+!reportes/.gitkeep
+
+# Contexto personal y memorias privadas
+contexto/*
+!contexto/.gitkeep
+!contexto/proyectos-en-curso.example.md
+
+# Archivos temporales de sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

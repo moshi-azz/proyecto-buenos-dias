@@ -1,0 +1,19 @@
+{
+  "name": "buenos-dias",
+  "version": "0.2.0",
+  "description": "Reporte matutino automático: clima + correo con juicio de IA (Gemini) + dónde quedé + acciones sugeridas, entregado por dashboard/WhatsApp/notificación (fase 2 del proyecto 'buenos dias')",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "vincular": "node vincular-whatsapp.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
+    "marked": "latest",
+    "node-notifier": "latest",
+    "open": "latest",
+    "qrcode": "latest",
+    "whatsapp-web.js": "latest"
+  }
+}
